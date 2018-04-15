@@ -1,0 +1,14 @@
+<header role="header" class="mat-elevation-z8">
+  <mat-toolbar-row class="layout-max-width center" color="primary">
+      <button mat-button [routerLink]="['/']">logo</button>
+      <span class="spacer"></span>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="example-icon">menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/dashboard']">dashboard</button>
+        <button mat-menu-item [routerLink]="['/profile']" disabled >profile</button>
+      </mat-menu>
+  </mat-toolbar-row>
+</header>

@@ -1,0 +1,29 @@
+.layout-max-width {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.spacer {
+    /* This fills the remaining space, by using flexbox. 
+        Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.nav-padding {
+    height: 56px;
+    @media screen and (min-width: 600px) {
+        height: 64px; 
+    }
+}
